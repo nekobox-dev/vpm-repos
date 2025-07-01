@@ -26,11 +26,9 @@
         </fluent-tooltip>
         {{~ end; ~}}
         <div class="caption1 mb-2" id="publishedByText">Published by <a href="{{listingInfo.Author.Url}}" target="_blank">{{ listingInfo.Author.Name }}</a></div>
-        {{~ if listingInfo.InfoLink.Url ~}}
-          <div class="caption1" id="publishedByText">
-            <a href="{{listingInfo.InfoLink.Url}}" target="_blank">{{ if listingInfo.InfoLink.Text; listingInfo.InfoLink.Text; else; "Lean More"; end; }}</a>
-          </div>
-        {{~ end; ~}}
+        <div class="caption1" id="emargency">
+          <a href="vcc://vpm/addRepo?url=https://nekobox-dev.github.io/vpm-repos/index.json" target="_blank">If you cannot open "Add to VCC", click here!</a>
+        </div>
       </div>
     </div>
     <div class="addToVccBlock mt-4 row align-items-center">
